@@ -6,7 +6,7 @@ import { HOSTNAME } from "../config";
 const Navigation = () => {
   return (
     <>
-      <header style={{ backgroundColor: blueGrey[100] }}>
+      <header style={{ backgroundColor: blueGrey[100], color: "#000" }}>
         <Container>
           <Box
             sx={{
@@ -16,7 +16,7 @@ const Navigation = () => {
             }}
           >
             <Typography variant="h4">
-              <NavLink to={items[0].navLink}>Logo</NavLink>
+              <NavLink style={{color: "#000"}} to={items[0].navLink}>Logo</NavLink>
             </Typography>
             <ul style={{ display: "flex" }}>
               {items.map((elem, ind) => {
@@ -24,7 +24,7 @@ const Navigation = () => {
                   <>
                     {elem.show ? (
                       <li key={ind}>
-                        <NavLink to={elem.navLink}>{elem.navName}</NavLink>
+                        <NavLink style={{color: "#000"}} to={elem.navLink}>{elem.navName}</NavLink>
                       </li>
                     ) : (
                       ""

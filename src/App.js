@@ -5,7 +5,9 @@ const App = () => {
   return (
     <React.Fragment>
       <Navigation />
-      <Routing />
+      <main style={{marginTop: 90}}>
+        <Routing />
+      </main>
     </React.Fragment>
   );
 };
